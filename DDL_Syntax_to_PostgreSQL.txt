@@ -1,0 +1,64 @@
+===========================================
+PREFACE
+===========================================
+This program is aims to create tables and insert the dataset into a PostgreSQL database.
+
+
+===========================================
+URL DATASET
+===========================================
+Dataset URL: https://www.kaggle.com/datasets/yashdalsaniya/supply-chain-delivery-dataset 
+
+===========================================
+Data Definition Language Syntax
+===========================================
+Defines the structure of the `table_project1`, specifying columns, data types, and constraints using `CREATE TABLE`.
+
+CREATE TABLE table_project1(
+    "ID" INT PRIMARY KEY,
+    "Project Code" VARCHAR,
+    "PQ # " VARCHAR,
+    "PO / SO #" VARCHAR,
+    "ASN/DN #" VARCHAR,
+    "Country" VARCHAR,
+    "Managed By" VARCHAR,
+    "Fulfill Via" VARCHAR,
+    "Vendor INCO Term" VARCHAR,
+    "Shipment Mode" VARCHAR,
+    "PQ First Sent to Client Date" VARCHAR,
+    "PO Sent to Vendor Date" VARCHAR,
+    "Scheduled Delivery Date" VARCHAR,
+    "Delivered to Client Date" VARCHAR,
+    "Delivery Recorded Date" VARCHAR,
+    "Product Group" VARCHAR,
+    "Sub Classification" VARCHAR,
+    "Vendor" VARCHAR,
+    "Item Description" VARCHAR,
+    "Molecule Test Type" VARCHAR,
+    "Brand" VARCHAR,
+    "Dosage" VARCHAR,
+    "Dosage Form" VARCHAR,
+    "Unit of Measure (Per Pack)" INTEGER,
+    "Line Item Quantity" INTEGER,
+    "Line Item Value" NUMERIC,
+    "Pack Price" NUMERIC,
+    "Unit Price" NUMERIC,
+    "Manufacturing Site" VARCHAR,
+    "First Line Designation" VARCHAR,
+    "Weight (Kilograms)" VARCHAR,
+    "Freight Cost (USD)" VARCHAR,
+    "Line Item Insurance (USD)" NUMERIC
+);
+
+
+===========================================
+Insert Dataset to PostgreSQL
+===========================================
+Inserts data from a CSV file into the `table_project1` using `Import`.
+
+1. Click Import/Export File on `table_project1`
+2. Filename path : D:\PORTFOLIO PROJECT\Supply-Chain-Data-Automation-and-Visualization-for-Using-Airflow\data\SCMS_Delivery_History_Dataset.csv
+3. Format : csv
+
+
+
