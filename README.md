@@ -11,8 +11,7 @@
 6. data_raw.csv - Raw dataset after inserted to PostgreSQL and before being transformed
 7. data_clean.csv - Cleaned dataset after being transformed using Airflow
 8. DAG_Graph_Flow.jpg - Screeshoot of DAG flow in Airflow
-9. elastic-kibana.yaml - File containing script to run ETL process in docker
-10. images - Contains visualization screenshoots from Kibana
+9. images - Contains visualization screenshoots from Kibana
 ```
 
 ## Problem Background
